@@ -32,15 +32,15 @@ Usage
 	To run nEmulator, supply following CLI arguments:
 	<br />
 	where:<br />
-	<arg1> : <emulator's receiving UDP port number in the forward (sender) direction>, <br />
-	<arg2> : <receiver's network address>, <br />
-	<arg3> : <receiver's receiving UDP port number>, <br /> 
-	<arg4> : <emulator's receiving UDP port number in the backward (receiver) direction>, <br />
-	<arg5> : <sender's network address>,  <br />
-	<arg6> : <sender's receiving UDP port number>, <br />
-	<arg7> : <maximum delay of the link in units of millisecond>, <br />
-	<arg8> : <packet discard probability>, <br />
-	<arg9> : <verbose-mode> (Boolean: Set to 1, the network emulator will output its internal processing, one per line, e.g. receiving Packet seqnum/SACK seqnum, discarding Packet seqnum /SACK seqnum, forwarding Packet seqnum /SACK seqnum). <br />
+	arg1 : emulator's receiving UDP port number in the forward (sender) direction, <br />
+	arg2 : receiver's network address, <br />
+	arg3 : receiver's receiving UDP port number, <br /> 
+	arg4 : emulator's receiving UDP port number in the backward (receiver) direction, <br />
+	arg5 : sender's network address,  <br />
+	arg6 : sender's receiving UDP port number, <br />
+	arg7 : maximum delay of the link in units of millisecond, <br />
+	arg8 : packet discard probability, <br />
+	arg9 : verbose-mode> (Boolean: Set to 1, the network emulator will output its internal processing, one per line, e.g. receiving Packet seqnum/SACK seqnum, discarding Packet seqnum /SACK seqnum, forwarding Packet seqnum /SACK seqnum). <br />
 
 6. Run Sender
 	```make	
@@ -50,11 +50,11 @@ Usage
 	To run Sender, supply following CLI arguments:
 	<br />
 	where:<br />
-	<arg1> : <host address of the network emulator>,<br />
-	<arg2> : <UDP port number used by the emulator to receive data from the sender>,<br />
-	<arg3> : <UDP port number used by the sender to receive SACKs from the emulator>,<br />
-	<arg4> : <timeout interval in units of millisecond>, and<br />
-	<arg5> : <name of the file to be transferred> <br />
+	arg1 : host address of the network emulator <br />
+	arg2 : UDP port number used by the emulator to receive data from the sender<br />
+	arg3 : UDP port number used by the sender to receive SACKs from the emulator <br />
+	arg4 : timeout interval in units of millisecond, and<br />
+	arg5 : name of the file to be transferred <br />
 	<br />
 	
 7. Run Receiver
@@ -65,10 +65,10 @@ Usage
 	To run Sender, supply following CLI arguments:
 	<br />
 	where:<br />
-	<arg1> : <hostname for the network emulator>,<br />
-	<arg2> : <UDP port number used by the link emulator to receive ACKs from the receiver>,<br />
-	<arg3> : <UDP port number used by the receiver to receive data from the emulator>, and <br />
-	<arg4> : <name of the file into which the received data is written><br />
+	arg1 : hostname for the network emulator,<br />
+	arg2 : UDP port number used by the link emulator to receive ACKs from the receiver,<br />
+	arg3 : UDP port number used by the receiver to receive data from the emulator, and <br />
+	arg4 : name of the file into which the received data is written<br />
 
 
 Example run: <br />
